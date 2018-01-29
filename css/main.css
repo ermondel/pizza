@@ -14,21 +14,35 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	align-items: center;
 }
-#box-logo { /* background-color: tomato; */ width: 144px; }
-#box-time { background-color: blue; width: 144px; background-color: #8CBF40; 
-	border-radius: 0px 10px 0px 10px;
-	-moz-border-radius: 0px 10px 0px 10px;
-	-webkit-border-radius: 0px 10px 0px 10px;
-	border: 0px solid #8CBF40;
-	padding: 12px 0px 12px 24px;
+#box-logo { text-align: center; margin-bottom: 18px; }
+#box-logo img { max-width: 160px; }
+#box-time {
+	color: #FF6600;
+	font-size: 1.5em;
+	width: 144px;
+	padding: 14px 24px;
+	margin-bottom: 24px;
 }
-#box-login { background-color: green; width: 144px; background-color: #8CBF40; 
-	border-radius: 10px 0px 10px 0px;
-	-moz-border-radius: 10px 0px 10px 0px;
-	-webkit-border-radius: 10px 0px 10px 0px;
-	border: 0px solid #8CBF40;
-	padding: 12px 0px 12px 24px;
+#box-login {
+}
+#box-login a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+	width: 144px;
+	padding: 18px 24px;
+	margin-bottom: 24px;
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 0px solid #FAFAFA;
+}
+#box-login a:hover {
+	background-color: #FF6600;
 }
 @media screen and (min-width: 181px) {
 	nav { flex-direction: row ; flex-wrap: wrap; }
@@ -37,4 +51,11 @@ nav {
 @media screen and (min-width: 601px) {
 	#box-time { order: -1; }
 	#box-logo { flex-basis: auto; };
+}
+@media screen and (min-width: 1080px) {
+	nav {
+		width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
