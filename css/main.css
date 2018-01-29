@@ -15,9 +15,21 @@ nav {
 	justify-content: space-between;
 	flex-direction: column;
 }
-#box-logo { background-color: tomato; }
-#box-time { background-color: blue; }
-#box-login { background-color: green; }
+#box-logo { /* background-color: tomato; */ width: 144px; }
+#box-time { background-color: blue; width: 144px; background-color: #8CBF40; 
+	border-radius: 0px 10px 0px 10px;
+	-moz-border-radius: 0px 10px 0px 10px;
+	-webkit-border-radius: 0px 10px 0px 10px;
+	border: 0px solid #8CBF40;
+	padding: 12px 0px 12px 24px;
+}
+#box-login { background-color: green; width: 144px; background-color: #8CBF40; 
+	border-radius: 10px 0px 10px 0px;
+	-moz-border-radius: 10px 0px 10px 0px;
+	-webkit-border-radius: 10px 0px 10px 0px;
+	border: 0px solid #8CBF40;
+	padding: 12px 0px 12px 24px;
+}
 @media screen and (min-width: 181px) {
 	nav { flex-direction: row ; flex-wrap: wrap; }
 	#box-logo { flex-basis: 100%; };
