@@ -4,13 +4,25 @@
  */
 body { font-family: Arial, sans-serif; font-size: 14px; color: black; background-color: white; }
 header {
-	width: 100%;
 	border-bottom: 1px solid #E0E0E0;
-
-	background-color: tomato;
-	width: 361px;
 
 	-webkit-box-shadow: 0px 3px 10px 0px rgba(224,224,224,1);
 	   -moz-box-shadow: 0px 3px 10px 0px rgba(224,224,224,1);
 	        box-shadow: 0px 3px 10px 0px rgba(224,224,224,1);
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+#box-logo { background-color: tomato; }
+#box-time { background-color: blue; }
+#box-login { background-color: green; }
+@media screen and (min-width: 181px) {
+	nav { flex-direction: row ; flex-wrap: wrap; }
+	#box-logo { flex-basis: 100%; };
+}
+@media screen and (min-width: 601px) {
+	#box-time { order: -1; }
+	#box-logo { flex-basis: auto; };
 }
