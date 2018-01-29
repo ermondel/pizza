@@ -2,6 +2,18 @@
  * main.css
  * alpha 0.1
  */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("webfonts/fa-regular-400.eot");
+  src: url("webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), 
+  url("webfonts/fa-regular-400.woff2") format("woff2"), 
+  url("webfonts/fa-regular-400.woff") format("woff"), 
+  url("webfonts/fa-regular-400.ttf") format("truetype"), 
+  url("webfonts/fa-regular-400.svg#fontawesome") format("svg"); 
+}
+
 body { font-family: Arial, sans-serif; font-size: 14px; color: black; background-color: white; }
 header {
 	border-bottom: 1px solid #E0E0E0;
@@ -16,33 +28,46 @@ nav {
 	flex-direction: column;
 	align-items: center;
 }
-#box-logo { text-align: center; margin-bottom: 18px; }
+#box-logo { text-align: center; margin-bottom: 30px; }
 #box-logo img {}
 #box-time {
 	color: #FF6600;
 	font-size: 1.5em;
-	width: 144px;
-	padding: 14px 24px;
-	margin-bottom: 24px;
+	padding: 14px 24px 14px 24px;
+	margin-bottom: 40px;
+
+	/* border: 1px solid black; */
 }
-#box-login {
+#box-time span:before {
+	font-family: 'Font Awesome 5 Free';
+	content: "\f017";
+	margin-right: 0.5em;
+	color: black;
 }
 #box-login a {
 	display: block;
-	color: black;
 	text-decoration: none;
 	font-size: 1em;
-	width: 144px;
 	padding: 18px 24px;
-	margin-bottom: 24px;
-	background-color: #FAFAFA;
+	margin: 0px 24px 40px 24px;
+	color: white;
+	background-color: #89C040;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border: 0px solid #FAFAFA;
+	-webkit-box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
+	-moz-box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
+	box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
+
+	/* border: 1px solid black; */
+}
+#box-login a:before {
+	font-family: 'Font Awesome 5 Free';
+	content: "\f007";
+	margin-right: 0.5em;
 }
 #box-login a:hover {
-	background-color: #FF6600;
+	background-color: #60822A;
 }
 @media screen and (min-width: 181px) {
 	nav { flex-direction: row ; flex-wrap: wrap; }
@@ -50,7 +75,8 @@ nav {
 }
 @media screen and (min-width: 601px) {
 	#box-time { order: -1; }
-	#box-logo { flex-basis: auto; };
+	#box-logo { flex-basis: auto; }
+	#box-time, #box-login a { margin-bottom: 0px; }
 }
 @media screen and (min-width: 1080px) {
 	nav {
