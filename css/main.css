@@ -1,6 +1,6 @@
 /**
  * main.css
- * alpha 0.1
+ * beta 0.1
  */
 @font-face {
   font-family: 'Font Awesome 5 Free';
@@ -15,22 +15,14 @@
 }
 
 body { font-family: Arial, sans-serif; font-size: 14px; color: black; background-color: white; }
-header {
-	border-bottom: 1px solid #E0E0E0;
+header { border-bottom: 1px solid #E0E0E0;
 	-webkit-box-shadow: 0px 3px 10px 0px rgba(224,224,224,1);
 	   -moz-box-shadow: 0px 3px 10px 0px rgba(224,224,224,1);
 	        box-shadow: 0px 3px 10px 0px rgba(224,224,224,1);
 }
-nav {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
-}
-#box-logo { text-align: center; margin-bottom: 30px; }
-#box-logo a:focus {
-	outline: none;
-}
+nav { display: flex; justify-content: space-between; flex-direction: column; align-items: center; padding-top: 15px; margin-bottom: 10px; }
+#box-logo { text-align: center; margin-bottom: 20px; }
+#box-logo a:focus { outline: none; }
 #box-logo a:focus img {
 	outline: none;
 	border-radius: 5px;
@@ -40,27 +32,9 @@ nav {
 	-moz-box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
 	box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
 }
-#box-time {
-	color: #FF6600;
-	font-size: 1.5em;
-	padding: 14px 24px 14px 24px;
-	margin-bottom: 40px;
-
-	/* border: 1px solid black; */
-}
-#box-time span:before {
-	font-family: 'Font Awesome 5 Free';
-	content: "\f017";
-	margin-right: 0.5em;
-	color: black;
-}
-#box-login a {
-	display: block;
-	text-decoration: none;
-	font-size: 1em;
-	padding: 18px 24px;
-	margin: 0px 24px 40px 24px;
-	color: white;
+#box-time { color: #FF6600; font-size: 1.5em; padding: 14px 24px 14px 24px; margin-bottom: 40px; }
+#box-time span:before { font-family: 'Font Awesome 5 Free'; content: "\f017"; margin-right: 0.5em; color: black; }
+#box-login a { display: block; text-decoration: none; font-size: 1em; padding: 18px 24px; margin: 0px 24px 40px 24px; color: white;
 	background-color: #89C040;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -68,21 +42,10 @@ nav {
 	-webkit-box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
 	-moz-box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
 	box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
-
-	/* border: 1px solid black; */
 }
-#box-login a:before {
-	font-family: 'Font Awesome 5 Free';
-	content: "\f007";
-	margin-right: 0.5em;
-}
-#box-login a:hover {
-	background-color: #FF6600;
-}
-#box-login a:focus {
-	outline: none;
-	background-color: #FF6600;
-}
+#box-login a:before { font-family: 'Font Awesome 5 Free'; content: "\f007"; margin-right: 0.5em; }
+#box-login a:hover { background-color: #FF6600; }
+#box-login a:focus { outline: none; background-color: #FF6600; }
 @media screen and (min-width: 181px) {
 	nav { flex-direction: row ; flex-wrap: wrap; }
 	#box-logo { flex-basis: 100%; };
@@ -93,29 +56,14 @@ nav {
 	#box-time, #box-login a { margin-bottom: 0px; }
 }
 @media screen and (min-width: 1080px) {
-	nav {
-		width: 1080px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	nav { width: 1080px; margin-left: auto; margin-right: auto; }
 }
 
 /* ---------------------------------------------------------------------- */
-main {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-#wrapper-pizza-add {
-	text-align: center;
-}
-#wrapper-pizza-add .pizza-add {
-	cursor: pointer;
-	font-size: 1em;
-	font-weight: bold;
-	color: #4C3D12;
-	text-transform: uppercase;
-	padding: 18px 24px;
-	border: none;
+main { margin-top: 50px; margin-bottom: 50px; }
+#wrapper-pizza-add { text-align: center; }
+#wrapper-pizza-add .pizza-add { cursor: pointer; font-size: 1em; font-weight: bold; color: #4C3D12; 
+text-transform: uppercase; padding: 18px 24px; border: none;
 	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -124,42 +72,17 @@ main {
 	-moz-box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
 	box-shadow: 1px 1px 2px 0px rgba(138,138,138,1);
 }
-#wrapper-pizza-add .pizza-add:hover {
-	background: linear-gradient(110deg, #FF6600 10%, #ffed4b 90%);
-}
-#wrapper-pizza-add .pizza-add:focus {
-	outline: none;
-	background: linear-gradient(110deg, #FF6600 10%, #ffed4b 90%);
-}
+#wrapper-pizza-add .pizza-add:hover { background: linear-gradient(110deg, #FF6600 10%, #ffed4b 90%); }
+#wrapper-pizza-add .pizza-add:focus { outline: none; background: linear-gradient(110deg, #FF6600 10%, #ffed4b 90%); }
 
-.pizzas {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
-	/* background-color: skyblue; */
-}
-.pizza {
-	position: relative;
-	font-size: 1.2em;
-	max-width: 260px;
-	padding: 23px;
-	margin-bottom: 30px;
+.pizzas { width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
+.pizza { position: relative; font-size: 1.2em; max-width: 260px; padding: 23px; margin-bottom: 30px;
 	border: 1px solid #E0E0E0;
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
 	        border-radius: 5px;
-	/* background-color: tomato; */
 }
-.pizza::before {
-	content: '';
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	top: -16px;
-	left: -16px;
-	z-index: 2;
+.pizza::before { content: ''; position: absolute; width: 30px; height: 30px; top: -16px; left: -16px; z-index: 2;
 	background-color: white;
 	border-right: 1px solid #E0E0E0;
 	-webkit-transform: rotate(45deg);
@@ -167,31 +90,12 @@ main {
         -ms-transform: rotate(45deg);
          -o-transform: rotate(45deg);
 }
-.pizza .pizza-img {
-	margin-bottom: 2em;
-}
-.pizza .pizza-img a {
-	display: block; 
-	border: 5px solid #E0E0E0;
-	overflow: hidden;
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
-}
-.pizza .pizza-img a:hover {
-	border-color: #FF6600;
-}
-.pizza .pizza-img a:focus {
-	outline: none;
-	border-color: #FF6600;
-}
-.pizza .pizza-img a img { 
-	display: block;
-	width: 100%;
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
-}
+.pizza .pizza-img { margin-bottom: 2em; }
+.pizza .pizza-img a { display: block; border: 5px solid #E0E0E0; overflow: hidden; 
+-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
+.pizza .pizza-img a:hover { border-color: #FF6600; }
+.pizza .pizza-img a:focus { outline: none; border-color: #FF6600; }
+.pizza .pizza-img a img { display: block; width: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
 .pizza .pizza-time { width: 60%; float: left; margin-bottom: 1em; text-transform: uppercase; /* background-color: red; */ }
 .pizza .pizza-eta { width: 60%; float: left; margin-bottom: 1em; /* background-color: green; */ }
 .pizza .pizza-queue { width: 40%; float: left; text-align: right; margin-bottom: 1em; /* background-color: blue; */ }
