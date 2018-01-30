@@ -130,7 +130,7 @@ main {
 	outline: none;
 	border-color: #FF6600;
 }
-.pizza .pizza-img img { 
+.pizza .pizza-img a img { 
 	display: block; 
 	width: 100%; 
 	border-radius: 50%;
