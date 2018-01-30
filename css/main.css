@@ -110,7 +110,7 @@ main {
 }
 .pizza {
 	background-color: tomato;
-	max-width: 250px;
+	max-width: 300px;
 }
 .pizza .pizza-img {
 	padding: 2%;
@@ -118,6 +118,7 @@ main {
 .pizza .pizza-img a {
 	display: block; 
 	border: 5px solid black;
+	overflow: hidden;
 	border-radius: 100%;
      -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -132,9 +133,11 @@ main {
 .pizza .pizza-img img { 
 	display: block; 
 	width: 100%; 
+	/*
 	      border-radius: 100%;
      -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
+  */
 }
 .pizza .pizza-time { width: 50%; float: left; background-color: red; }
 .pizza .pizza-queue { width: 50%; float: left; background-color: blue; }
