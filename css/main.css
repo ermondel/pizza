@@ -119,9 +119,9 @@ main {
 	display: block; 
 	border: 5px solid black;
 	overflow: hidden;
-	border-radius: 100%;
-     -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
+	border-radius: 50%;
+     -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 .pizza .pizza-img a:hover {
 	border-color: #FF6600;
