@@ -149,8 +149,4 @@ main {
 	main { width: 1080px; margin-left: auto; margin-right: auto; justify-content: space-between; }
 }
 
-#radius {
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
-}
+#radius { border-radius: 50%; }
