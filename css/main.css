@@ -110,10 +110,9 @@ main {
 }
 .pizza {
 	background-color: tomato;
-	max-width: 300px;
-}
-.pizza .pizza-img {
-	padding: 2%;
+	max-width: 280px;
+	padding: 30px;
+	margin-bottom: 20px;
 }
 .pizza .pizza-img a {
 	display: block; 
@@ -131,8 +130,8 @@ main {
 	border-color: #FF6600;
 }
 .pizza .pizza-img a img { 
-	display: block; 
-	width: 100%; 
+	display: block;
+	width: 100%;
 	-webkit-border-radius: 50%;
 	   -moz-border-radius: 50%;
 	        border-radius: 50%;
