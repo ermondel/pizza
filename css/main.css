@@ -119,9 +119,9 @@ main {
 	display: block; 
 	border: 5px solid black;
 	overflow: hidden;
-	border-radius: 50%;
-     -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
 }
 .pizza .pizza-img a:hover {
 	border-color: #FF6600;
@@ -133,9 +133,9 @@ main {
 .pizza .pizza-img a img { 
 	display: block; 
 	width: 100%; 
-	border-radius: 50%;
-     -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
 }
 .pizza .pizza-time { width: 50%; float: left; background-color: red; }
 .pizza .pizza-queue { width: 50%; float: left; background-color: blue; }
@@ -148,5 +148,3 @@ main {
 @media screen and (min-width: 1080px) {
 	main { width: 1080px; margin-left: auto; margin-right: auto; justify-content: space-between; }
 }
-
-#radius { border-radius: 50%; }
