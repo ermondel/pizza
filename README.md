@@ -10,6 +10,7 @@ desktop 21.5", laptop 15.6"
 * Google Chrome (v63)
 * Opera (v50)
 * Microsoft Edge (v40)
+
 smartphone 5"
 * Google Chrome
 
