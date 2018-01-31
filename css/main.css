@@ -126,13 +126,22 @@ text-transform: uppercase; padding: 18px 24px; border: none;
 .pizza .pizza-img { margin-bottom: 2em; }
 .pizza .pizza-img a { display: block; border: 5px solid #E0E0E0; overflow: hidden; 
 -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
-.pizza .pizza-img a:hover { border-color: #FF6600; }
 .pizza .pizza-img a:focus { outline: none; border-color: #FF6600; }
 .pizza .pizza-img a img { display: block; text-align: center; width: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
 .pizza .pizza-time { width: 60%; float: left; margin-bottom: 1em; text-transform: uppercase; }
 .pizza .pizza-eta { width: 60%; float: left; margin-bottom: 1em; }
 .pizza .pizza-queue { width: 40%; float: left; text-align: right; margin-bottom: 1em; }
 .pizza .pizza-price { width: 40%; float: left; text-align: right; margin-bottom: 1em; }
+
+/**
+ * pizza border hover animation
+ */
+.pizza .pizza-img a:hover { border-color: #FF6600;
+	-webkit-transition: border-color 0.3s ease-out;
+	-moz-transition: border-color 0.3s ease-out;
+	-o-transition: border-color 0.3s ease-out;
+	transition: border-color 0.3s ease-out;
+}
 
 /**
  * @media
