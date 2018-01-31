@@ -19,6 +19,7 @@
 
 /* Base options
    ========================================================================== */
+html { background-color: #455A64; }
 body { font-family: Arial, sans-serif; font-size: 14px; color: black; background-color: white; }
 
 /* Header
